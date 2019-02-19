@@ -4,7 +4,7 @@
   "description": "This is a test project for setting up a Javascript Development Environment",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node buildScripts/srcServer.js"
   },
   "repository": {
     "type": "git",
