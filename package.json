@@ -4,6 +4,7 @@
   "description": "This is a test project for setting up a Javascript Development Environment",
   "main": "index.js",
   "scripts": {
+    "prestart": "node buildScripts/startMessage.js",
     "start": "node buildScripts/srcServer.js"
   },
   "repository": {
