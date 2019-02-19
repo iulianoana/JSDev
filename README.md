@@ -21,5 +21,21 @@ $ npm start
 
 To start a dev sharing session, start the Express server (default port: 3000), then on a new terminal window run:
 ```sh
+$ npm start
 $ lt --port 3000
+```
+or
+or
+```sh
+$ npm start
+$ npm run share
+```
+
+To run a security check, open up the terminal window and type:
+```sh
+$ npm run security-check
+```
+or
+```sh
+$ npm audit
 ```
