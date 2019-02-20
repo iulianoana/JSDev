@@ -3,7 +3,6 @@ import path from 'path';
 import open from 'open';
 import webpack from 'webpack';
 import config from '../webpack.config.dev';
-var webpack = require('webpack');
 
 const port = 3000;
 const app = express();
