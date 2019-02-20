@@ -4,6 +4,8 @@ environment:
   # node.js
   - nodejs_version: "10.15.1"
 
+# Don't actually build.
+build: Script
 # Install scripts. (runs after repo cloning)
 install:
   # Get the latest stable version of Node.js or io.js
@@ -18,6 +20,3 @@ test_script:
   - npm --version
   # Run tests
   - npm test
-
-# Don't actually build.
-build: Script
