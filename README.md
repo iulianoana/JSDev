@@ -3,19 +3,53 @@ This is a test project for setting up a JavaScript Development Environment.
 
 Clone or download the repository on you local development environment.
 
-#Dependencies
+## Dependencies
 Mandatory: Install Node.js globally on your machine (package manager).
 Optional: Globally install Local Tunnel (sharing session plugin):
 ```sh
-$ npm install -g localtunnel
+$ npm install localtunnel
+$ npm install express
+$ npm install chalk
 ```
 
+## Installation
 To start the Express server, open up the Terminal window and type:
 ```sh
 $ node buildScripts/srcServer.js
 ```
-
-To start a dev sharing session, start the Express server (default port: 3000), then on a new terminal window run:
+or
 ```sh
+$ npm start
+```
+To start the Express server only:
+```sh
+$ npm open:src
+```
+
+To start a dev sharing session (using Localtunnel).
+Start the Express server (default port: 3000), then in a new terminal window run:
+```sh
+$ npm start
 $ lt --port 3000
 ```
+or
+```sh
+$ npm start
+$ npm run localtunnel
+```
+To start the sharing session without starting the dev server:
+```sh
+$ npm run share
+```
+
+To run a security check, open up the terminal window and run:
+```sh
+$ npm run security-check
+```
+or
+```sh
+$ npm audit
+```
+
+To end the sharring session or the dev server:
+- Press CTRL + C followed by the letter Y, then hit Enter.
