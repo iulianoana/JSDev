@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm-run-all --parallel security-check open:src",
     "preopen:src": "babel-node buildScripts/startMessage.js",
-    "open:src":"babel-node buildScripts/srcServer.js",
+    "open:src": "babel-node buildScripts/srcServer.js",
     "security-check": "npm audit",
     "localtunnel": "lt --port 3000",
     "share": "npm-run-all --parallel open:src localtunnel"
@@ -29,7 +29,7 @@
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.5",
+    "babel-loader": "^7.1.5",
     "babel-preset-latest": "^6.24.1",
     "babel-register": "^6.26.0",
     "chai": "^4.2.0",
