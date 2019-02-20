@@ -10,6 +10,7 @@ Optional: Globally install Local Tunnel (sharing session plugin):
 $ npm install localtunnel
 $ npm install express
 $ npm install chalk
+$ npm install babel
 ```
 
 ## Installation
@@ -23,7 +24,7 @@ $ npm start
 ```
 To start the Express server only:
 ```sh
-$ npm open:src
+$ npm run open:src
 ```
 
 To start a dev sharing session (using Localtunnel).
