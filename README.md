@@ -55,5 +55,8 @@ $ npm audit
 To end the sharring session or the dev server:
 - Press CTRL + C followed by the letter Y, then hit Enter.
 
-## Liccense
+## Issues/Bugs
+Feel free to report bugs and defects to the [Issues](https://github.com/iulianoana/JSDev/issues) and label them appropriately (**bug**, **enhancement**, etc).
+
+## License
 This project is [MIT](https://github.com/iulianoana/JSDev/blob/master/LICENSE) licensed.
