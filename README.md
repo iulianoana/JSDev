@@ -1,4 +1,4 @@
-# Express
+# JSDev
 This is a test project for setting up a JavaScript Development Environment.
 
 Clone or download the repository on you local development environment.
