@@ -8,13 +8,14 @@
     "preopen:src": "babel-node buildScripts/startMessage.js",
     "open:src": "babel-node buildScripts/srcServer.js",
     "security-check": "npm audit",
-    "prelocaltunnel": "",
     "localtunnel": "lt --port 3000",
     "share": "npm-run-all --parallel open:src localtunnel",
     "lint": "esw webpack.config.* src buildScripts",
     "lint:watch": "npm run lint -- --watch",
     "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
-    "test:watch": "npm run test -- --watch-extensions ts"
+    "test:watch": "npm run test -- --watch-extensions ts",
+    "generate-mock-data": "babel-node buildScripts/generateMockData",
+    "start-mockapi": "json-server --watch src/api/db.json --port 30001"
   },
   "repository": {
     "type": "git",
