@@ -9,17 +9,17 @@ export const schema = {
           "type": "object",
           "properties": {
             "id": {
-              "type": "number",
+              "type": "integer",
               "unique": true,
               "minimum": 1
             },
             "firstName": {
               "type": "string",
-              "faker": "name.firstName"
+              "faker": "name.findName"
             },
             "lastName": {
               "type": "string",
-              "faker": "name.lastName"
+              "faker": "name.findName"
             },
             "email": {
               "type": "string",
