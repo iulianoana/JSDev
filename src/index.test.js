@@ -10,7 +10,7 @@ describe('Our first test', () =>{
 
 describe('index.html', () => {
   // Define a done arg for asynchrouness.
-  it('should say hello', (done) => {
+  it('should say users', (done) => {
     // Get the html page into a constant.
     const index = fs.readFileSync('./src/index.html', "utf-8");
     // Pass the dom into the jsdom function.
@@ -18,7 +18,7 @@ describe('index.html', () => {
       // Get the first heading element rendered.
       const h1 = window.document.getElementsByTagName('h1')[0];
       // Write the test
-      expect(h1.innerHTML).to.equal("Hello World!");
+      expect(h1.innerHTML).to.equal("Users");
       // When the page anynchrounously loaded
       done();
       // Finish the test
